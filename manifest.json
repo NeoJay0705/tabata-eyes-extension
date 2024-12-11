@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Tabata Timer",
+    "version": "1.1",
+    "description": "A Tabata timer extension with configurable rounds, work/rest times, and alerts.",
+    "icons": {
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "permissions": [
+        "storage",
+        "alarms",
+        "notifications"
+    ]
+}
